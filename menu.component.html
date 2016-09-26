@@ -1,0 +1,19 @@
+<div id="st-container" [ngClass]="{'st-menu-open': isOpen$ | async }" class="st-container st-effect-9 ">
+	<sd-topbar>
+		<ng-content select="[topbar]"></ng-content>
+	</sd-topbar>
+	<nav class="st-menu st-effect-{{ effectNumber }}">
+		<sd-sidebar class="visible-xs visible-sm">
+			<ng-content select="[sidebar]"></ng-content>
+		</sd-sidebar>
+	</nav>
+	<!-- content push wrapper -->
+	<div class="st-pusher" (click)="closeMenu()">
+		<!--TODO bugfix iPhone Overflow Scroll -->
+		<div #stContent id="st-content" class="st-content"><!-- this is the wrapper for the content -->
+			<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+        <ng-content select="[contentInner]"></ng-content>
+      </div><!-- /st-content-inner -->
+		</div><!-- /st-content -->
+	</div><!-- /st-pusher -->
+</div><!-- /st-container -->

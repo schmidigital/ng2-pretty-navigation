@@ -1,0 +1,28 @@
+{
+  "name": "ng2-pretty-navigation",
+  "version": "1.0.0",
+  "description": "A simple pretty navigation package for Angular 2. Includes 14 themes and auto show/hide nav. Fully responsive.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/schmidigital/ng2-pretty-navigation.git"
+  },
+  "keywords": [
+    "angular2",
+    "navigation",
+    "offcanvas",
+    "nav",
+    "sidebar"
+  ],
+  "author": "Michael Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schmidigital/ng2-pretty-navigation/issues"
+  },
+  "homepage": "https://github.com/schmidigital/ng2-pretty-navigation#readme",
+  "dependencies": {
+  }
+}
